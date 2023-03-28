@@ -10,7 +10,7 @@ const textName = document.querySelector(".color");
 
 function changeColor(event) {
   backgColor.style.backgroundColor = getRandomHexColor();
-  textName.textContent = getRandomHexColor();
+  textName.textContent = backgColor.style.backgroundColor;
 }
 
 changeButton.addEventListener("click", changeColor);
